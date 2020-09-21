@@ -35,6 +35,7 @@ public class RootInteractor extends Interactor<RootInteractor.RootPresenter, Roo
     super.didBecomeActive(savedInstanceState);
 
     // Add attachment logic here (RxSubscriptions, etc.).
+    getRouter().attachLoggedOut();
   }
 
   /** Presenter interface implemented by this RIB's view. */
